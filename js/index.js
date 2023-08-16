@@ -1,0 +1,1 @@
+console.log("Index js script is working!");
