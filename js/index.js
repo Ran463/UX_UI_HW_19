@@ -1,1 +1,3 @@
-console.log("Index js script is working!");
+$("#backToTopBtn").click(function() {
+  $("html").animate({ scrollTop: 0 }, "slow");
+  });

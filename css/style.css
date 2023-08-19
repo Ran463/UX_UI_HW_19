@@ -13,7 +13,37 @@ nav {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width:900px) {
+a {
+  color: #033e6f;
+  text-decoration: none;
+}
+
+.arrow {
+  text-align: center;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -31,7 +61,7 @@ nav {
   .menu a.active {
     border-bottom: 3px solid #2d3648;
   }
-  
+
   .aboutMeSection {
     flex-direction: column;
     text-align: center;
@@ -48,7 +78,8 @@ nav {
     text-align: center;
   }
 
-  .introAboutMe h1, .introAboutMe p {
+  .introAboutMe h1,
+  .introAboutMe p {
     padding-left: 20px;
     margin-left: 20px;
   }
@@ -63,14 +94,14 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "image"
-    "content";
+    grid-template-areas:
+      'image'
+      'content';
     align-items: center;
     gap: 50px;
   }
 
-  .parentImage img{
+  .parentImage img {
     display: grid;
     padding-left: 40px;
     width: 200%;
@@ -80,9 +111,7 @@ nav {
   .content-workSection {
     display: grid;
     grid-area: content;
-    
   }
-
 }
 
 .logo {
@@ -158,14 +187,13 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: 
-  "image content";
+  grid-template-areas: 'image content';
   align-items: center;
   gap: 50px;
   color: #2d3648;
 }
 
-.parentImage img{
+.parentImage img {
   padding-left: 40px;
   max-width: 700px;
   grid-area: image;
@@ -186,6 +214,23 @@ nav {
   padding-right: 30px;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding: 50px;
+}
+.button1 {
+  background-color: #033e6f;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .footer {
