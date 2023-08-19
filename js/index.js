@@ -1,3 +1,3 @@
-$("#backToTopBtn").click(function() {
-  $("html").animate({ scrollTop: 0 }, "slow");
-  });
+$('#backToTopBtn').click(function () {
+  $('html').animate({ scrollTop: 0 }, 'slow');
+});
