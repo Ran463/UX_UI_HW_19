@@ -15,7 +15,7 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="image/logo.png" />
+        <a href="index.html"><img src="image/logo.png" /></a>
       </div>
       <div class="menu">
         <a href="index.html">Portfolio</a>
@@ -42,7 +42,12 @@
             companions.
           </p>
           <div class="csBtnContainer">
-            <button class="button2">Learn More</button>
+            <button
+              onclick="window.location.href = 'planIT.html';"
+              class="button2"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
@@ -85,6 +90,10 @@
       </div>
     </section>
 
+    <div class="buttonContainer">
+      <button id="backToTopBtn" class="button1">Back to the Top</button>
+    </div>
+
     <section>
       <footer class="footer">
         <div class="logoFooter">
@@ -100,5 +109,8 @@
         </div>
       </footer>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
